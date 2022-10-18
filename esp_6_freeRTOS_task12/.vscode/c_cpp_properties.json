@@ -1,0 +1,34 @@
+{
+    "configurations": [
+        {
+            "name": "ESP-IDF",
+            "compilerPath": "C:\\Espressif\\tools\\xtensa-esp32-elf\\esp-2022r1-11.2.0\\xtensa-esp32-elf\\bin\\xtensa-esp32-elf-gcc.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "includePath": [
+                "${config:idf.espIdfPath}/components/**",
+                "${config:idf.espIdfPathWin}/components/**",
+                "${config:idf.espAdfPath}/components/**",
+                "${config:idf.espAdfPathWin}/components/**",
+                "${workspaceFolder}/**",
+                "C:/Espressif/frameworks/esp-idf-v5.0/components/freertos/FreeRTOS-Kernel-SMP/include",
+                "C:/Espressif/frameworks/esp-idf-v5.0/components/freertos/esp_additions/include/freertos",
+                "C:/Espressif/frameworks/esp-idf-v5.0/components/fatfs/test_fatfs_host/sdkconfig",
+                "C:/Espressif/frameworks/esp-idf-v5.0/components/freertos/FreeRTOS-Kernel-SMP/portable/riscv/include/freertos",
+                "C:/Espressif/frameworks/esp-idf-v5.0/components/freertos/FreeRTOS-Kernel/portable/linux/include",
+                "C:/Espressif/frameworks/esp-idf-v5.0/components/esp_hw_support/include"
+            ],
+            "browse": {
+                "path": [
+                    "${config:idf.espIdfPath}/components",
+                    "${config:idf.espIdfPathWin}/components",
+                    "${config:idf.espAdfPath}/components/**",
+                    "${config:idf.espAdfPathWin}/components/**",
+                    "${workspaceFolder}"
+                ],
+                "limitSymbolsToIncludedHeaders": false
+            }
+        }
+    ],
+    "version": 4
+}
