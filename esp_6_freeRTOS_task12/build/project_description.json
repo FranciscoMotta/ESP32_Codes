@@ -6,7 +6,7 @@
     "config_defaults":    "",
     "app_elf":            "esp_6_freeRTOS_task12.elf",
     "app_bin":            "esp_6_freeRTOS_task12.bin",
-    "git_revision":       "c321739",
+    "git_revision":       "c321739-dirty",
     "target":             "esp32",
     "rev":                "0",
     "phy_data_partition": "",

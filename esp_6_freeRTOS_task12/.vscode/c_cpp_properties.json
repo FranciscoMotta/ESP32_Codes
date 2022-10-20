@@ -26,8 +26,9 @@
                     "${config:idf.espAdfPathWin}/components/**",
                     "${workspaceFolder}"
                 ],
-                "limitSymbolsToIncludedHeaders": false
-            }
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "configurationProvider": "ms-vscode.cmake-tools"
         }
     ],
     "version": 4
