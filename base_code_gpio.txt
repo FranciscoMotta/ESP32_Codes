@@ -1,0 +1,32 @@
+/*
+    Inclusiones
+*/
+
+#include <stdio.h>
+#include <stdint.h>
+#include <stdbool.h>
+#include "driver/gpio.h"
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+
+/*
+    Macros
+*/
+
+
+/*
+    Declaración de funciones
+*/
+
+
+/*
+    Principal
+*/
+
+void app_main(void)
+{
+}
+
+/*
+    Definición de funciones
+*/
