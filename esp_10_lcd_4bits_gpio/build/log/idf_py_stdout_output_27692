@@ -1,0 +1,22 @@
+[1/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+D:/Escritorio/esp32_codigos_clase/esp_10_lcd_4bits_gpio/main/main.c: In function 'app_main':
+D:/Escritorio/esp32_codigos_clase/esp_10_lcd_4bits_gpio/main/main.c:104:10: warning: unused variable 'state_led' [-Wunused-variable]
+  104 |     bool state_led = false;
+      |          ^~~~~~~~~
+D:/Escritorio/esp32_codigos_clase/esp_10_lcd_4bits_gpio/main/main.c:103:13: warning: unused variable 'i' [-Wunused-variable]
+  103 |     uint8_t i = 0;
+      |             ^
+[2/9] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\Escritorio\esp32_codigos_clase\esp_10_lcd_4bits_gpio\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.0_py3.8_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.0/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/Escritorio/esp32_codigos_clase/esp_10_lcd_4bits_gpio/build/bootloader/bootloader.bin"
+Bootloader binary size 0x66b0 bytes. 0x950 bytes (8%) free.
+[3/7] Linking C static library esp-idf\main\libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable esp_10_lcd_4bits_gpio.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.3
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/Escritorio/esp32_codigos_clase/esp_10_lcd_4bits_gpio/build/esp_10_lcd_4bits_gpio.bin
+[7/7] cmd.exe /C "cd /D D:\Escritorio\esp32_codigos_clase\esp_10_lcd_4bits_gpio\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.0_py3.8_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.0/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/Escritorio/esp32_codigos_clase/esp_10_lcd_4bits_gpio/build/partition_table/partition-table.bin D:/Escritorio/esp32_codigos_clase/esp_10_lcd_4bits_gpio/build/esp_10_lcd_4bits_gpio.bin"
+esp_10_lcd_4bits_gpio.bin binary size 0x2bad0 bytes. Smallest app partition is 0x100000 bytes. 0xd4530 bytes (83%) free.

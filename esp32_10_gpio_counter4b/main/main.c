@@ -32,6 +32,7 @@ uint8_t gpio_masks[] = {0x01, 0x02, 0x04, 0x08};
 
 void Init_Gpio_Leds (void);
 void Send_Count_Leds (uint8_t counter);
+
 /*
     Principal
 */
@@ -45,8 +46,7 @@ void app_main(void)
         for(counter = 0 ; counter < 16 ; counter ++)
         {
             Send_Count_Leds(counter);
-            printf("Cuenta: %i\n\r", counter);
-            vTaskDelay(pdMS_TO_TICKS(1000));
+            vTaskDelay(pdMS_TO_TICKS(100));
         }
     }    
 }
