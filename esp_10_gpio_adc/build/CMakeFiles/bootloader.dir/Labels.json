@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/Escritorio/esp32_codigos_clase/esp_10_gpio_adc/build/CMakeFiles/bootloader"
+		},
+		{
+			"file" : "D:/Escritorio/esp32_codigos_clase/esp_10_gpio_adc/build/CMakeFiles/bootloader.rule"
+		},
+		{
+			"file" : "D:/Escritorio/esp32_codigos_clase/esp_10_gpio_adc/build/CMakeFiles/bootloader-complete.rule"
+		},
+		{
+			"file" : "D:/Escritorio/esp32_codigos_clase/esp_10_gpio_adc/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+		},
+		{
+			"file" : "D:/Escritorio/esp32_codigos_clase/esp_10_gpio_adc/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+		},
+		{
+			"file" : "D:/Escritorio/esp32_codigos_clase/esp_10_gpio_adc/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+		},
+		{
+			"file" : "D:/Escritorio/esp32_codigos_clase/esp_10_gpio_adc/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+		},
+		{
+			"file" : "D:/Escritorio/esp32_codigos_clase/esp_10_gpio_adc/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+		},
+		{
+			"file" : "D:/Escritorio/esp32_codigos_clase/esp_10_gpio_adc/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+		},
+		{
+			"file" : "D:/Escritorio/esp32_codigos_clase/esp_10_gpio_adc/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"bootloader"
+		],
+		"name" : "bootloader"
+	}
+}
