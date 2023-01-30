@@ -1,4 +1,7 @@
-/*LIBRERIAS*/
+/*
+   LIBRERIAS
+*/
+
 #include <stdio.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
@@ -25,10 +28,10 @@ volatile int read_adc_timer = 0;
     DECLARACIÓN DE FUNCIONES
 */
 
-void User_Init_Gpio(void);  // Configuraciones del gpio
-void User_Init_Ledc(void);  // Configuramos el LEDC (LED Control)
-void User_Init_Adc(void);   // Configuramos del ADC
-void User_Init_Timer(void); // Configuramos el Timer
+void User_Init_Gpio (void);  // Configuraciones del gpio
+void User_Init_Ledc (void);  // Configuramos el LEDC (LED Control)
+void User_Init_Adc (void);   // Configuramos del ADC
+void User_Init_Timer (void); // Configuramos el Timer
 
 /*
     RUTINA DE SERVICIO A INT. TIMERS
