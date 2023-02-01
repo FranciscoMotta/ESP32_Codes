@@ -1,18 +1,31 @@
-/*LIBRERIAS*/
+/*
+   LIBRERIAS
+*/
 #include <stdio.h>
 #include <stdint.h>
 #include <stdbool.h>
 
-/*MACROS*/
+/*
+   MACROS
+*/
 
-/*VARIABLES*/
+/*
+   VARIABLES
+*/
 
-/*DECLARACIÓN DE FUNCIONES*/
+/*
+   DECLARACIÓN DE FUNCIONES
+*/
 
-/*PRINCIPAL*/
+/*
+   PRINCIPAL
+*/
+
 void app_main(void)
 {
     printf("HOLA MUNDO!!\n");
 }
 
-/*DEFINICION DE SUBFUNCIONES*/
+/*
+   DEFINICION DE SUBFUNCIONES
+*/

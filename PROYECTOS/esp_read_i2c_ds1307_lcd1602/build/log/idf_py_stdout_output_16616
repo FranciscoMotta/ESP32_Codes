@@ -1,0 +1,8 @@
+-- ccache will be used for faster recompilation
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file D:/Escritorio/esp32_codigos_clase/PROYECTOS/esp_read_i2c_ds1307_lcd1602/sdkconfig
+-- Components: 
+-- Component paths: 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/Escritorio/esp32_codigos_clase/PROYECTOS/esp_read_i2c_ds1307_lcd1602/build
