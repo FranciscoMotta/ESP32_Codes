@@ -98,13 +98,19 @@ typedef enum
    COL_13,
    COL_14,
    COL_15,
-   COL_16
+   COL_16,
+   COL_17,
+   COL_18,
+   COL_19,
+   COL_20
 } _column_lcd_t;
 
 typedef enum
 {
    ROW_1 = 0,
-   ROW_2
+   ROW_2,
+   ROW_3,
+   ROW_4
 } _row_lcd_t;
 
 /*
@@ -153,9 +159,17 @@ void app_main(void)
       /* code */
       state_led = !state_led;
       gpio_set_level(USER_LED_GPIO, state_led);
-      User_I2c_Get_Date(FORMAT_24_H);
-      Lcd_I2c_Show_Date();
-      vTaskDelay(pdMS_TO_TICKS(100));
+      // User_I2c_Get_Date(FORMAT_24_H);
+      // Lcd_I2c_Show_Date();
+      Lcd_I2c_Set_Cursor(ROW_1, COL_1);
+      Lcd_I2c_Write_String("ESP32");
+      Lcd_I2c_Set_Cursor(ROW_2, COL_1);
+      Lcd_I2c_Write_String("Liquid Display Crist");
+      Lcd_I2c_Set_Cursor(ROW_3, COL_8);
+      Lcd_I2c_Write_String("O_O");
+      Lcd_I2c_Set_Cursor(ROW_4, COL_1);
+      Lcd_I2c_Write_String("by Francisco Motta");
+      vTaskDelay(pdMS_TO_TICKS(500));
    }
 }
 
@@ -197,19 +211,26 @@ void Lcd_I2c_Show_Date(void)
 void Lcd_I2c_Set_Cursor(_row_lcd_t fila, _column_lcd_t columna)
 {
    uint8_t pos_cur = 0x00;
+   const uint8_t base_code_pos = 0x80;
    if (fila == ROW_1)
    {
       /* code */
-      pos_cur = 0x80;
+      pos_cur = base_code_pos | 0x00;
    }
    else if (fila == ROW_2)
    {
       /* code */
-      pos_cur = 0xC0;
+      pos_cur = base_code_pos | 0x40;
    }
-   else
+   else if (fila == ROW_3)
    {
       /* code */
+      pos_cur = base_code_pos | 0x14;
+   }
+   else if (fila == ROW_4)
+   {
+      /* code */
+      pos_cur = base_code_pos | 0x54;
    }
    pos_cur += columna;
    Lcd_I2c_Send_Byte_With_Toggle_Enable(pos_cur, MODO_COMANDO);

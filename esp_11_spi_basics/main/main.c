@@ -206,10 +206,10 @@ void app_main(void)
    {
       /* code */
       ojo_up();
-      vTaskDelay(pdMS_TO_TICKS(3000));
+      vTaskDelay(pdMS_TO_TICKS(250));
       Max7219_Clear_Display();
       ojo_down();
-      vTaskDelay(pdMS_TO_TICKS(2500));
+      vTaskDelay(pdMS_TO_TICKS(250));
       Max7219_Clear_Display();
    }
 }
